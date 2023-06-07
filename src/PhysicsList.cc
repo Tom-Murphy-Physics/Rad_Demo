@@ -145,7 +145,7 @@ void PhysicsList::ConstructProcess()
 #include "StepCut.hh"
 
 void PhysicsList::ConstructEM()
-{
+{/*
   auto particleIterator=GetParticleIterator();
   particleIterator->reset();
 
@@ -226,7 +226,7 @@ void PhysicsList::ConstructEM()
       pmanager->AddProcess(thehIonisation,-1,2,2);
       pmanager->AddProcess(theHadronStepCut,-1,-1,3);
     }
-  }
+  }*/
 }
 
 
@@ -234,7 +234,7 @@ void PhysicsList::ConstructEM()
 #include "G4Decay.hh"
 
 void PhysicsList::ConstructGeneral()
-{
+{/*
   // Add Decay Process
 
   G4Decay* theDecayProcess = new G4Decay();
@@ -255,7 +255,7 @@ void PhysicsList::ConstructGeneral()
       pmanager ->SetProcessOrdering(theDecayProcess, idxPostStep);
       pmanager ->SetProcessOrdering(theDecayProcess, idxAtRest);
     }
-  }
+  }*/
 }
 
 
